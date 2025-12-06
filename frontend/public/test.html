@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Test</title>
+</head>
+<body>
+    <h1>Finance Tracker API Test</h1>
+    <button onclick="testRegister()">Test Register</button>
+    <button onclick="testLogin()">Test Login</button>
+    <div id="output" style="margin-top: 20px; white-space: pre-wrap;"></div>
+
+    <script>
+        const output = document.getElementById('output');
+
+        async function testRegister() {
+            output.textContent = 'Testing registration...';
+            try {
+                const response = await fetch('http://localhost:8000/api/auth/register/', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        username: 'testuser' + Date.now(),
+                        email: 'test' + Date.now() + '@test.com',
+                        password: 'test123456',
+                        password2: 'test123456',
+                        currency: 'USD'
+                    })
+                });
+                const data = await response.json();
+                output.textContent = '✅ Registration Success!\n' + JSON.stringify(data, null, 2);
+            } catch (error) {
+                output.textContent = '❌ Registration Failed!\n' + error.message;
+            }
+        }
+
+        async function testLogin() {
+            output.textContent = 'Testing login...';
+            try {
+                const response = await fetch('http://localhost:8000/api/auth/login/', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        username: 'newuser123',
+                        password: 'securepass123'
+                    })
+                });
+                const data = await response.json();
+                output.textContent = '✅ Login Success!\n' + JSON.stringify(data, null, 2);
+            } catch (error) {
+                output.textContent = '❌ Login Failed!\n' + error.message;
+            }
+        }
+    </script>
+</body>
+</html>
