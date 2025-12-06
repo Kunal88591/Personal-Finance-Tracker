@@ -223,14 +223,3 @@ npm run build
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## License
-
-This project is open source and available under the MIT License.
-
-## Support
-
-For issues, questions, or contributions, please open an issue on GitHub.
-
----
-
-Built with ❤️ using Django and React
