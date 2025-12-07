@@ -219,8 +219,8 @@ The app comes with pre-configured categories:
 </p>
 
 <p align="center">
-  <a href="https://github.com/kunal885911">
-    <img src="https://img.shields.io/badge/GitHub-kunal885911-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+  <a href="https://github.com/Kunal88591">
+    <img src="https://img.shields.io/badge/GitHub-Kunal88591-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
   </a>
   <a href="mailto:kunalmeena1311@gmail.com">
     <img src="https://img.shields.io/badge/Email-kunalmeena1311@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
@@ -271,5 +271,5 @@ SOFTWARE.
 </p>
 
 <p align="center">
-  Made with ❤️ by <a href="https://github.com/kunal885911">Kunal Meena</a>
+  Made with ❤️ by <a href="https://github.com/Kunal88591">Kunal Meena</a>
 </p>
